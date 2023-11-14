@@ -1,0 +1,13 @@
+<div class="ctsp" style="display: flex; justify-content: center;align-items: center; width: 70%;     gap: 2rem;
+margin-top: 5rem; border:2px solid #ccc; margin-left: 12rem;border-radius: 5px;padding: 2rem 1rem;">
+    <div class="left">
+        <img style="width:100%;" src="../<%=sach.urlHinh%>" alt="<%=sach.urlHinh%>">
+    </div>
+    <div class="right"
+        style=" width:100%;padding: 0 1rem; font-family: Arial, Helvetica, sans-serif;color: rgb(16, 99, 78);">
+        <h1><%=sach.tenSach %>
+            <h2 class="price">Giá: <%=sach.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }) %> </h2>
+            <p> <%=sach.moTa %> </p>
+        </h1>
+    </div>
+</div>

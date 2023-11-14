@@ -1,0 +1,16 @@
+<% for (let s of listSach ){%>
+<div class="card" style="width: 19.7rem;">
+    <div class="hinh">
+        <img class="card-img-top" src="../<%=s.urlHinh%>" alt="Card image cap">
+
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"><%=s.tenSach%></h5>
+        <h3 style="font-size: 1.3rem;">
+            Gía: <%=s.gia.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })%> VNĐ
+        </h3>
+
+        <a href="/sach/<%=s.id%>" class="btn btn-primary">Chọn sách</a>
+    </div>
+</div>
+<% } %>
